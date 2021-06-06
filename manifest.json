@@ -1,0 +1,36 @@
+{
+  "required_api_version": "^2.0.0",
+  "name": "Notion",
+  "description": "Quickly create a record in a Notion database",
+  "developer_name": "Yoann Gauthier",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "notion-kw",
+      "type": "keyword",
+      "name": "Keyword",
+      "description": "The shortcut used to launch the extention",
+      "default_value": "n"
+    },
+    {
+      "id": "notion-api-key",
+      "type": "input",
+      "name": "Notion API Key"
+    },
+    {
+      "id": "notion-db-id",
+      "type": "input",
+      "name": "Notion Database id",
+      "description": "To get that id, refer to Notion Developer doc : https://developers.notion.com/docs/getting-started#share-a-database-with-your-integration"
+    },
+    {
+      "id": "notion-db-options",
+      "type": "text",
+      "name": "Notion Properties Options",
+      "description": "This field can contain a JSON describing the properties of the record created in Notion. See Notion doc to understand how to build that JSON : https://developers.notion.com/reference/post-page"
+    }
+  ]
+}
